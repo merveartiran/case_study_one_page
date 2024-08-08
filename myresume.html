@@ -6,7 +6,7 @@
 
 <head>
     <!-- title -->
-    <title>Miuul SPA (One Page)</title>
+    <title>Miuul SPA (My Resume)</title>
 
     <!-- Dil karakter Bozluklluğu önlemek -->
     <meta charset="UTF-8" />
@@ -30,22 +30,16 @@
 
 
     <!-- External CSS -->
-    <link rel="stylesheet" href="miuul.css" />
+    <link rel="stylesheet" href="myresume.css" />
 </head>
 
-<body data-bs-spy="scroll" data-bs-target="#miuul_navbar_id">
+<body>
     <noscript>Your browser doesn't support Javascript</noscript>
     <!--Navbar header main (içinde section oluştur kaç section olacaksa) footer-->
     <!-- Start Codes -->
 
     <!-- navbar start -->
-    <nav id="miuul_navbar_id">
-        <a href="#" id="home_page_link_id">HomePage</a>
-        <a href="#section_about_me_id" id="about_me_link_id">About me</a>
-        <a href="#section_blog_id" id="blog_link_id">Blog</a>
-        <a href="#section_contact_id" id="contact_link_id">Contact</a>
-        <a href="#" id="my_cv_id">My Resume</a>
-    </nav>
+
 
     <!-- navbar end -->
 
@@ -62,40 +56,64 @@
     <!-- main start -->
     <main>
         <!-- About Start -->
-        <section id="section_about_me_id">
+        <section id="section_my_cv_id">
+
+            <form action="#" id="my_cv_form_id">
+                <fieldset>
+                    <legend>My Resume</legend>
+                    <!-- NAME -->
+                    <label for="my_cv_name_id">Name:</label>
+                    <input type="text" id="my_cv_name_id" name="my_cv_name_id" required autocomplete="name"
+                        placeholder="Enter your name">
+
+                    <!-- Surname -->
+                    <label for="my_cv_surname_id">Surname:</label>
+                    <input type="text" id="my_cv_surname_id" name="my_cv_surname_id" required autocomplete="surname"
+                        placeholder="Enter your surname">
+
+                    <!-- Email -->
+
+                    <label for="my_cv_email_id">Email:</label>
+                    <input type="email" id="my_cv_email_id" name="my_cv_email_id" required autocomplete="email"
+                        placeholder="Enter your email address">
+
+                    <!-- Phone -->
+                    <label for="my_cv_phone_id">Phone:</label>
+                    <input type="tel" id="my_cv_phone_id" name="my_cv_phone_id" required autocomplete="phone"
+                        placeholder="Enter your phone">
+
+
+
+                    <!-- message -->
+
+                    <label for="my_cv_message_id">Message:</label>
+                    <textarea id="my_cv_message_id" name="my_cv_message_id" rows="10" cols="30"
+                        placeholder="Enter your message"></textarea>
+
+
+
+                    <input type="submit" value="Send" id="my_cv_submit_id">
+
+                </fieldset>
+            </form>
 
         </section>
         <!-- About End -->
 
-        <!-- Blog Start -->
-        <section id="section_blog_id">
 
-        </section>
-        <!-- Blog End -->
-
-        <!-- Contact Start -->
-        <section id="section_contact_id">
-
-        </section>
-        <!-- Contact End -->
     </main>
     <!-- main end -->
-<!-- back to top start -->
-<a href="#" id="back_to_top_id">font Awesome+Yukarı</a>
-<!-- back to top end -->
+
 
     <!-- footer start -->
-    <footer id="miuul_footer_id">
-<a href="mailto:mail_address">mail adresiniz</a>
-<div>Tarih:<p id="miuul_date_id"></p></div>
-    </footer>
+
     <!-- footer end -->
 
     <!-- End Codes -->
 
     <!-- External JS -->
 
-    <script src="miuul.js"></script>
+
 </body>
 
 </html>
